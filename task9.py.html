@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6897bb;}
+.s2 { color: #808080;}
+.s3 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">salary = </span><span class="s1">5000  </span><span class="s2"># зарплата</span>
+<span class="s0">spend = </span><span class="s1">6000  </span><span class="s2"># траты</span>
+<span class="s0">months = </span><span class="s1">10  </span><span class="s2"># количество месяцев</span>
+<span class="s0">increase = </span><span class="s1">0.03  </span><span class="s2"># рост цен</span>
+
+<span class="s0">need_money = </span><span class="s1">0  </span><span class="s2"># количество денег, чтобы прожить 10 месяцев</span>
+<span class="s0">money = </span><span class="s1">0</span>
+<span class="s2"># Вычислим общие траты за 10 месяцев</span>
+<span class="s3">for </span><span class="s0">i </span><span class="s3">in </span><span class="s0">range(</span><span class="s1">10</span><span class="s0">):</span>
+    <span class="s3">if </span><span class="s0">i == </span><span class="s1">1</span><span class="s0">:</span>
+        <span class="s0">money = spend</span>
+    <span class="s3">else</span><span class="s0">:</span>
+        <span class="s0">money = money + (spend * increase)</span>
+        <span class="s0">spend = spend * increase</span>
+<span class="s2"># Найдем необходимую сумму финансовой подушки</span>
+<span class="s0">need_money = money - (salary * </span><span class="s1">10</span><span class="s0">)</span>
+<span class="s0">print(round(need_money))</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6897bb;}
+.s2 { color: #808080;}
+.s3 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">money_capital = </span><span class="s1">10000</span>
+<span class="s0">salary = </span><span class="s1">5000</span>
+<span class="s0">spend = </span><span class="s1">6000</span>
+<span class="s0">increase = </span><span class="s1">0.05</span>
+
+<span class="s0">month = </span><span class="s1">0  </span><span class="s2"># количество месяцев, которое можно прожить</span>
+
+<span class="s3">while </span><span class="s0">money_capital &gt; ((spend * increase) - salary):  </span><span class="s2"># пока финансовая подушка больше, чем превышение трат</span>
+    <span class="s0">all_money = salary + money_capital</span>
+    <span class="s3">if </span><span class="s0">all_money &gt; (spend * increase):</span>
+        <span class="s0">month += </span><span class="s1">1</span>
+        <span class="s3">if </span><span class="s0">month &gt;= </span><span class="s1">1</span><span class="s0">:</span>
+            <span class="s0">money_capital = money_capital - ((spend * increase) - salary)</span>
+            <span class="s0">spend = spend * increase</span>
+        <span class="s3">else</span><span class="s0">:</span>
+            <span class="s0">money_capital = money_capital - (spend - salary)</span>
+
+<span class="s0">print(month)</span>
+</pre>
+</body>
+</html>

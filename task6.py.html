@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6897bb;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">list_numbers = [</span><span class="s1">2</span><span class="s2">, </span><span class="s0">-</span><span class="s1">93</span><span class="s2">, </span><span class="s0">-</span><span class="s1">2</span><span class="s2">, </span><span class="s1">8</span><span class="s2">, </span><span class="s0">-</span><span class="s1">36</span><span class="s2">, </span><span class="s0">-</span><span class="s1">44</span><span class="s2">, </span><span class="s0">-</span><span class="s1">1</span><span class="s2">, </span><span class="s0">-</span><span class="s1">85</span><span class="s2">, </span><span class="s0">-</span><span class="s1">14</span><span class="s2">, </span><span class="s1">90</span><span class="s2">, </span><span class="s0">-</span><span class="s1">22</span><span class="s2">, </span><span class="s0">-</span><span class="s1">90</span><span class="s2">, </span><span class="s0">-</span><span class="s1">100</span><span class="s2">, </span><span class="s0">-</span><span class="s1">8</span><span class="s2">, </span><span class="s1">38</span><span class="s2">, </span><span class="s0">-</span><span class="s1">92</span><span class="s2">, </span><span class="s0">-</span><span class="s1">45</span><span class="s2">, </span><span class="s1">67</span><span class="s2">, </span><span class="s1">53</span><span class="s2">, </span><span class="s1">25</span><span class="s0">]</span>
+
+<span class="s3"># Найти индекс максимального элемента</span>
+<span class="s0">max_index = </span><span class="s1">0</span>
+<span class="s2">for </span><span class="s0">i </span><span class="s2">in </span><span class="s0">range(len(list_numbers)):</span>
+    <span class="s0">max_ = list_numbers[max_index]</span>
+    <span class="s0">current_ = list_numbers[i]</span>
+    <span class="s2">if </span><span class="s0">current_ &gt; max_:</span>
+        <span class="s0">max_index = i</span>
+<span class="s3"># Поменяем максимальный и последний элементы местами</span>
+<span class="s0">list_numbers[max_index]</span><span class="s2">, </span><span class="s0">list_numbers[-</span><span class="s1">1</span><span class="s0">] = list_numbers[-</span><span class="s1">1</span><span class="s0">]</span><span class="s2">, </span><span class="s0">list_numbers[max_index]</span>
+
+<span class="s0">print(list_numbers)</span>
+</pre>
+</body>
+</html>
